@@ -1,0 +1,12 @@
+C:\Users\guido\source\repos\SosaStillante.Guido.2A.TPFInal\SqlDb\bin\Debug\netcoreapp3.1\conexionSql.deps.json
+C:\Users\guido\source\repos\SosaStillante.Guido.2A.TPFInal\SqlDb\bin\Debug\netcoreapp3.1\conexionSql.dll
+C:\Users\guido\source\repos\SosaStillante.Guido.2A.TPFInal\SqlDb\bin\Debug\netcoreapp3.1\conexionSql.pdb
+C:\Users\guido\source\repos\SosaStillante.Guido.2A.TPFInal\SqlDb\obj\Debug\netcoreapp3.1\conexionSql.csproj.AssemblyReference.cache
+C:\Users\guido\source\repos\SosaStillante.Guido.2A.TPFInal\SqlDb\obj\Debug\netcoreapp3.1\conexionSql.AssemblyInfoInputs.cache
+C:\Users\guido\source\repos\SosaStillante.Guido.2A.TPFInal\SqlDb\obj\Debug\netcoreapp3.1\conexionSql.AssemblyInfo.cs
+C:\Users\guido\source\repos\SosaStillante.Guido.2A.TPFInal\SqlDb\obj\Debug\netcoreapp3.1\conexionSql.csproj.CoreCompileInputs.cache
+C:\Users\guido\source\repos\SosaStillante.Guido.2A.TPFInal\SqlDb\obj\Debug\netcoreapp3.1\conexionSql.dll
+C:\Users\guido\source\repos\SosaStillante.Guido.2A.TPFInal\SqlDb\obj\Debug\netcoreapp3.1\conexionSql.pdb
+C:\Users\guido\source\repos\SosaStillante.Guido.2A.TPFInal\SqlDb\bin\Debug\netcoreapp3.1\Entidades.dll
+C:\Users\guido\source\repos\SosaStillante.Guido.2A.TPFInal\SqlDb\bin\Debug\netcoreapp3.1\Entidades.pdb
+C:\Users\guido\source\repos\SosaStillante.Guido.2A.TPFInal\SqlDb\obj\Debug\netcoreapp3.1\conexionSql.csproj.CopyComplete

@@ -1,0 +1,9 @@
+C:\Users\guido\source\repos\SosaStillante.Guido.2A.TPFinal\SqlDb\bin\Debug\netcoreapp3.1\SqlDb.deps.json
+C:\Users\guido\source\repos\SosaStillante.Guido.2A.TPFinal\SqlDb\bin\Debug\netcoreapp3.1\SqlDb.dll
+C:\Users\guido\source\repos\SosaStillante.Guido.2A.TPFinal\SqlDb\bin\Debug\netcoreapp3.1\SqlDb.pdb
+C:\Users\guido\source\repos\SosaStillante.Guido.2A.TPFinal\SqlDb\obj\Debug\netcoreapp3.1\SqlDb.csproj.AssemblyReference.cache
+C:\Users\guido\source\repos\SosaStillante.Guido.2A.TPFinal\SqlDb\obj\Debug\netcoreapp3.1\SqlDb.AssemblyInfoInputs.cache
+C:\Users\guido\source\repos\SosaStillante.Guido.2A.TPFinal\SqlDb\obj\Debug\netcoreapp3.1\SqlDb.AssemblyInfo.cs
+C:\Users\guido\source\repos\SosaStillante.Guido.2A.TPFinal\SqlDb\obj\Debug\netcoreapp3.1\SqlDb.csproj.CoreCompileInputs.cache
+C:\Users\guido\source\repos\SosaStillante.Guido.2A.TPFinal\SqlDb\obj\Debug\netcoreapp3.1\SqlDb.dll
+C:\Users\guido\source\repos\SosaStillante.Guido.2A.TPFinal\SqlDb\obj\Debug\netcoreapp3.1\SqlDb.pdb
