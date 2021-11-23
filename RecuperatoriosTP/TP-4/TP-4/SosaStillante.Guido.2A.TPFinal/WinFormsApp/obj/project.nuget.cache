@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "crHKgNQIjhMbwcuQ4nIm10EgllBzDLL0HQLS3+ozonbqJKe7SeGQkVHd+2m2Y4voB2NuOqYhLmh125goKUjYSA==",
+  "dgSpecHash": "qD+bR4QF0Egx/YVxANpvrmVyRwNkZZGP0BDyvoOZSbN5wxHG5dK1jXs0f5dALY679YrR+SQVZKVXeFjQUPSSjQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\guido\\source\\repos\\TP-4\\SosaStillante.Guido.2A.TPFinal\\WinFormsApp\\WinFormsApp.csproj",
+  "projectFilePath": "C:\\Users\\guido\\Desktop\\Prog II\\tp_laboratorio_ii-master\\RecuperatoriosTP\\TP-4\\TP-4\\SosaStillante.Guido.2A.TPFinal\\WinFormsApp\\WinFormsApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\guido\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\guido\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",

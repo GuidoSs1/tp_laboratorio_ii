@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lFGT56vlzj1gl02Kqt165T8fT9lwgm4ZnpcASF27KWh4vCzZ4Ueuex0WK6YHCwR1Cm4JH2LIB4J0EjLHv3IGkQ==",
+  "dgSpecHash": "N6Z0Lqr1Fa5tV5bYMY9AbqZZs8kwKH3SksX62qrQzIwP3QWq6nOhkVJkwEnwevaeJap0AbQjEzeF4+ENk1TtzQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\guido\\source\\repos\\TP-4\\SosaStillante.Guido.2A.TPFinal\\TestUnitarios\\TestUnitarios.csproj",
+  "projectFilePath": "C:\\Users\\guido\\Desktop\\Prog II\\tp_laboratorio_ii-master\\RecuperatoriosTP\\TP-4\\TP-4\\SosaStillante.Guido.2A.TPFinal\\TestUnitarios\\TestUnitarios.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\guido\\.nuget\\packages\\coverlet.collector\\3.0.2\\coverlet.collector.3.0.2.nupkg.sha512",
     "C:\\Users\\guido\\.nuget\\packages\\microsoft.codecoverage\\16.9.4\\microsoft.codecoverage.16.9.4.nupkg.sha512",

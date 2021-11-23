@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "YJ8elapD+4exZUqIP/wrznxP4VIKBPLRa04YTHUnXc06Ejmfn3JKVQXhsqopKWudWdzvypUXXV+NZma8aEZZbg==",
+  "dgSpecHash": "ijNSxO7ViP6m1rLEUC6I8bhOVyLaHDNi/GrMAvtThzmpfESAwcmdYOiVA+fN//w2/dRvt+NNMinjBT/bYHh2iw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\guido\\source\\repos\\TP-4\\SosaStillante.Guido.2A.TPFinal\\TestConsole\\TestConsole.csproj",
+  "projectFilePath": "C:\\Users\\guido\\Desktop\\Prog II\\tp_laboratorio_ii-master\\RecuperatoriosTP\\TP-4\\TP-4\\SosaStillante.Guido.2A.TPFinal\\TestConsole\\TestConsole.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\guido\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\guido\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",

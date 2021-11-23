@@ -476,11 +476,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\guido\\source\\repos\\TP-4\\SosaStillante.Guido.2A.TPFinal\\SqlDb\\conexionSql.csproj",
+      "projectUniqueName": "C:\\Users\\guido\\Desktop\\Prog II\\tp_laboratorio_ii-master\\RecuperatoriosTP\\TP-4\\TP-4\\SosaStillante.Guido.2A.TPFinal\\SqlDb\\conexionSql.csproj",
       "projectName": "conexionSql",
-      "projectPath": "C:\\Users\\guido\\source\\repos\\TP-4\\SosaStillante.Guido.2A.TPFinal\\SqlDb\\conexionSql.csproj",
+      "projectPath": "C:\\Users\\guido\\Desktop\\Prog II\\tp_laboratorio_ii-master\\RecuperatoriosTP\\TP-4\\TP-4\\SosaStillante.Guido.2A.TPFinal\\SqlDb\\conexionSql.csproj",
       "packagesPath": "C:\\Users\\guido\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\guido\\source\\repos\\TP-4\\SosaStillante.Guido.2A.TPFinal\\SqlDb\\obj\\",
+      "outputPath": "C:\\Users\\guido\\Desktop\\Prog II\\tp_laboratorio_ii-master\\RecuperatoriosTP\\TP-4\\TP-4\\SosaStillante.Guido.2A.TPFinal\\SqlDb\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -501,8 +501,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\guido\\source\\repos\\TP-4\\SosaStillante.Guido.2A.TPFinal\\Entidades\\Entidades.csproj": {
-              "projectPath": "C:\\Users\\guido\\source\\repos\\TP-4\\SosaStillante.Guido.2A.TPFinal\\Entidades\\Entidades.csproj"
+            "C:\\Users\\guido\\Desktop\\Prog II\\tp_laboratorio_ii-master\\RecuperatoriosTP\\TP-4\\TP-4\\SosaStillante.Guido.2A.TPFinal\\Entidades\\Entidades.csproj": {
+              "projectPath": "C:\\Users\\guido\\Desktop\\Prog II\\tp_laboratorio_ii-master\\RecuperatoriosTP\\TP-4\\TP-4\\SosaStillante.Guido.2A.TPFinal\\Entidades\\Entidades.csproj"
             }
           }
         }

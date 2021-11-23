@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "hX9+UScS9GuDZHqnnbUbi2nn2VPlrJ868s0wVYEhlVjENuhqTAr0d2EWCj++F0kOSlgifmU7HDAjkRr7PlwQBg==",
+  "dgSpecHash": "7iioqK/2h8Homnzf5nYG91dnNsF+3/cmHvGs8x9aCbyKJpeeFfY4UcAsufZuX/mAfUZm8tY/qaCNZUaUCKyjYA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\guido\\source\\repos\\TP-4\\SosaStillante.Guido.2A.TPFinal\\SqlDb\\conexionSql.csproj",
+  "projectFilePath": "C:\\Users\\guido\\Desktop\\Prog II\\tp_laboratorio_ii-master\\RecuperatoriosTP\\TP-4\\TP-4\\SosaStillante.Guido.2A.TPFinal\\SqlDb\\conexionSql.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\guido\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\guido\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
