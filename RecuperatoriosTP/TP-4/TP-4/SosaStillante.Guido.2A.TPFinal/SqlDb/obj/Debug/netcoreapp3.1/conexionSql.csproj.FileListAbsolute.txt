@@ -10,3 +10,15 @@ C:\Users\guido\source\repos\SosaStillante.Guido.2A.TPFInal\SqlDb\obj\Debug\netco
 C:\Users\guido\source\repos\SosaStillante.Guido.2A.TPFInal\SqlDb\bin\Debug\netcoreapp3.1\Entidades.dll
 C:\Users\guido\source\repos\SosaStillante.Guido.2A.TPFInal\SqlDb\bin\Debug\netcoreapp3.1\Entidades.pdb
 C:\Users\guido\source\repos\SosaStillante.Guido.2A.TPFInal\SqlDb\obj\Debug\netcoreapp3.1\conexionSql.csproj.CopyComplete
+C:\Users\guido\Desktop\Prog II\tp_laboratorio_ii-master\RecuperatoriosTP\TP-4\TP-4\SosaStillante.Guido.2A.TPFinal\SqlDb\bin\Debug\netcoreapp3.1\conexionSql.deps.json
+C:\Users\guido\Desktop\Prog II\tp_laboratorio_ii-master\RecuperatoriosTP\TP-4\TP-4\SosaStillante.Guido.2A.TPFinal\SqlDb\bin\Debug\netcoreapp3.1\conexionSql.dll
+C:\Users\guido\Desktop\Prog II\tp_laboratorio_ii-master\RecuperatoriosTP\TP-4\TP-4\SosaStillante.Guido.2A.TPFinal\SqlDb\bin\Debug\netcoreapp3.1\conexionSql.pdb
+C:\Users\guido\Desktop\Prog II\tp_laboratorio_ii-master\RecuperatoriosTP\TP-4\TP-4\SosaStillante.Guido.2A.TPFinal\SqlDb\bin\Debug\netcoreapp3.1\Entidades.dll
+C:\Users\guido\Desktop\Prog II\tp_laboratorio_ii-master\RecuperatoriosTP\TP-4\TP-4\SosaStillante.Guido.2A.TPFinal\SqlDb\bin\Debug\netcoreapp3.1\Entidades.pdb
+C:\Users\guido\Desktop\Prog II\tp_laboratorio_ii-master\RecuperatoriosTP\TP-4\TP-4\SosaStillante.Guido.2A.TPFinal\SqlDb\obj\Debug\netcoreapp3.1\conexionSql.csproj.AssemblyReference.cache
+C:\Users\guido\Desktop\Prog II\tp_laboratorio_ii-master\RecuperatoriosTP\TP-4\TP-4\SosaStillante.Guido.2A.TPFinal\SqlDb\obj\Debug\netcoreapp3.1\conexionSql.AssemblyInfoInputs.cache
+C:\Users\guido\Desktop\Prog II\tp_laboratorio_ii-master\RecuperatoriosTP\TP-4\TP-4\SosaStillante.Guido.2A.TPFinal\SqlDb\obj\Debug\netcoreapp3.1\conexionSql.AssemblyInfo.cs
+C:\Users\guido\Desktop\Prog II\tp_laboratorio_ii-master\RecuperatoriosTP\TP-4\TP-4\SosaStillante.Guido.2A.TPFinal\SqlDb\obj\Debug\netcoreapp3.1\conexionSql.csproj.CoreCompileInputs.cache
+C:\Users\guido\Desktop\Prog II\tp_laboratorio_ii-master\RecuperatoriosTP\TP-4\TP-4\SosaStillante.Guido.2A.TPFinal\SqlDb\obj\Debug\netcoreapp3.1\conexionSql.csproj.CopyComplete
+C:\Users\guido\Desktop\Prog II\tp_laboratorio_ii-master\RecuperatoriosTP\TP-4\TP-4\SosaStillante.Guido.2A.TPFinal\SqlDb\obj\Debug\netcoreapp3.1\conexionSql.dll
+C:\Users\guido\Desktop\Prog II\tp_laboratorio_ii-master\RecuperatoriosTP\TP-4\TP-4\SosaStillante.Guido.2A.TPFinal\SqlDb\obj\Debug\netcoreapp3.1\conexionSql.pdb

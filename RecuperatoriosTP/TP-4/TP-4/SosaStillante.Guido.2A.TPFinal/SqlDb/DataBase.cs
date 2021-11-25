@@ -12,9 +12,9 @@ namespace conexionSql
         /// <summary>
         /// Definicion de Objetos de conexion, comando y data reader para el manejo de la base de datos
         /// </summary>
-        private static SqlConnection conexion;
-        private static SqlCommand comando;
-        private static SqlDataReader lector;
+        private SqlConnection conexion;
+        private SqlCommand comando;
+        private SqlDataReader lector;
 
 
         /// <summary>
@@ -22,8 +22,8 @@ namespace conexionSql
         /// </summary>
         public DataBase()
         {
-            conexion = new SqlConnection("Server = .; Database = TpCuatroDB; Trusted_Connection = True");
-            comando = new SqlCommand();
+            this.conexion = new SqlConnection("Server = .; Database = TpCuatroDB; Trusted_Connection = True");
+            this.comando = new SqlCommand();
         }
 
 
@@ -37,7 +37,7 @@ namespace conexionSql
 
             try
             {
-                conexion.Open();
+                this.conexion.Open();
             }
             catch (Exception)
             {
@@ -45,9 +45,9 @@ namespace conexionSql
             }
             finally
             {
-                if (conexion.State == ConnectionState.Open)
+                if (this.conexion.State == ConnectionState.Open)
                 {
-                    conexion.Close();
+                    this.conexion.Close();
                 }
             }
 
@@ -66,35 +66,35 @@ namespace conexionSql
             EGenero genero;
             ENacionalidad nacio;
 
-            comando.CommandType = CommandType.Text;
-            comando.Connection = conexion;
-            comando.CommandText = "SELECT nombre,apellido,documento,nacionalidad,genero,btc,ganancia,tipoObjeto FROM dbo.tienda";
+            this.comando.CommandType = CommandType.Text;
+            this.comando.Connection = conexion;
+            this.comando.CommandText = "SELECT nombre,apellido,documento,nacionalidad,genero,btc,ganancia,tipoObjeto FROM dbo.tienda";
 
             try
             {
-                if (conexion.State != ConnectionState.Open)
+                if (this.conexion.State != ConnectionState.Open)
                 {
-                    conexion.Open();
+                    this.conexion.Open();
                 }
 
-                lector = comando.ExecuteReader();
+                lector = this.comando.ExecuteReader();
 
-                while (lector.Read())
+                while (this.lector.Read())
                 {
-                    if((lector["tipoObjeto"].ToString()).Equals("esVendedor")) 
+                    if((this.lector["tipoObjeto"].ToString()).Equals("esVendedor")) 
                     {
                         Vendedor auxVendedor = new Vendedor();
 
-                        ENacionalidad.TryParse(lector["nacionalidad"].ToString(), out nacio);
-                        EGenero.TryParse(lector["genero"].ToString(), out genero);
+                        ENacionalidad.TryParse(this.lector["nacionalidad"].ToString(), out nacio);
+                        EGenero.TryParse(this.lector["genero"].ToString(), out genero);
 
-                        auxVendedor.Nombre = lector["nombre"].ToString();
-                        auxVendedor.Apellido = lector["apellido"].ToString();
-                        auxVendedor.stringDNI = lector["documento"].ToString();
+                        auxVendedor.Nombre = this.lector["nombre"].ToString();
+                        auxVendedor.Apellido = this.lector["apellido"].ToString();
+                        auxVendedor.stringDNI = this.lector["documento"].ToString();
                         auxVendedor.Nacio = nacio;
                         auxVendedor.Genero = genero;
-                        auxVendedor.btcString = lector["btc"].ToString();
-                        auxVendedor.ganString = lector["ganancia"].ToString();
+                        auxVendedor.btcString = this.lector["btc"].ToString();
+                        auxVendedor.ganString = this.lector["ganancia"].ToString();
 
 
                         auxTienda.listVen.Add(auxVendedor);
@@ -103,16 +103,16 @@ namespace conexionSql
                     {
                         Comprador auxComprador = new Comprador();
 
-                        ENacionalidad.TryParse(lector["nacionalidad"].ToString(), out nacio);
+                        ENacionalidad.TryParse(this.lector["nacionalidad"].ToString(), out nacio);
                         EGenero.TryParse(lector["genero"].ToString(), out genero);
 
-                        auxComprador.Nombre = lector["nombre"].ToString();
-                        auxComprador.Apellido = lector["apellido"].ToString();
-                        auxComprador.stringDNI = lector["documento"].ToString();
+                        auxComprador.Nombre = this.lector["nombre"].ToString();
+                        auxComprador.Apellido = this.lector["apellido"].ToString();
+                        auxComprador.stringDNI = this.lector["documento"].ToString();
                         auxComprador.Nacio = nacio;
                         auxComprador.Genero = genero;
-                        auxComprador.btcString = lector["btc"].ToString();
-                        auxComprador.BilleteraUsd = lector["ganancia"].ToString();
+                        auxComprador.btcString = this.lector["btc"].ToString();
+                        auxComprador.BilleteraUsd = this.lector["ganancia"].ToString();
 
 
                         auxTienda.listCom.Add(auxComprador);
@@ -129,9 +129,9 @@ namespace conexionSql
             }
             finally
             {
-                if (conexion.State == ConnectionState.Open)
+                if (this.conexion.State == ConnectionState.Open)
                 {
-                    conexion.Close();
+                    this.conexion.Close();
                 }
             }
 
@@ -156,28 +156,25 @@ namespace conexionSql
 
             try
             {
-                comando = new SqlCommand();
-                conexion = new SqlConnection("Server = .; Database = TpCuatroDB; Trusted_Connection = True");
-                comando.Connection = conexion;
-                comando.CommandType = CommandType.Text;
-
-                comando.CommandText = "INSERT INTO dbo.tienda (nombre,apellido,documento,nacionalidad,genero,btc,ganancia,tipoObjeto) VALUES (@nombre,@apellido,@documento,@nacionalidad,@genero,@btc,@ganancia,@tipoObjeto)";
+                this.comando.Connection = this.conexion;
+                this.comando.CommandType = CommandType.Text;
+                this.comando.CommandText = "INSERT INTO dbo.tienda (nombre,apellido,documento,nacionalidad,genero,btc,ganancia,tipoObjeto) VALUES (@nombre,@apellido,@documento,@nacionalidad,@genero,@btc,@ganancia,@tipoObjeto)";
                 
                 
-                comando.Parameters.AddWithValue("@nombre", nombre);
-                comando.Parameters.AddWithValue("@apellido", apellido);
-                comando.Parameters.AddWithValue("@documento", dni);
-                comando.Parameters.AddWithValue("@nacionalidad", nacionalidad);
-                comando.Parameters.AddWithValue("@genero", genero);
-                comando.Parameters.AddWithValue("@btc", btc);
-                comando.Parameters.AddWithValue("@ganancia", usd);
-                comando.Parameters.AddWithValue("@tipoObjeto", tipoObjeto);
+                this.comando.Parameters.AddWithValue("@nombre", nombre);
+                this.comando.Parameters.AddWithValue("@apellido", apellido);
+                this.comando.Parameters.AddWithValue("@documento", dni);
+                this.comando.Parameters.AddWithValue("@nacionalidad", nacionalidad);
+                this.comando.Parameters.AddWithValue("@genero", genero);
+                this.comando.Parameters.AddWithValue("@btc", btc);
+                this.comando.Parameters.AddWithValue("@ganancia", usd);
+                this.comando.Parameters.AddWithValue("@tipoObjeto", tipoObjeto);
 
 
-                if (conexion.State != ConnectionState.Open)
+                if (this.conexion.State != ConnectionState.Open)
                 {
-                    conexion.Open();
-                    comando.ExecuteNonQuery();
+                    this.conexion.Open();
+                    this.comando.ExecuteNonQuery();
                     rtn = true;
                 }
 
@@ -187,9 +184,9 @@ namespace conexionSql
             }
             finally
             {
-                if(conexion.State == ConnectionState.Open)
+                if(this.conexion.State == ConnectionState.Open)
                 {
-                    conexion.Close();
+                    this.conexion.Close();
                 }
             }
 
@@ -207,19 +204,17 @@ namespace conexionSql
 
             try
             {
-                comando = new SqlCommand();
-                conexion = new SqlConnection("Server = .; Database = TpCuatroDB; Trusted_Connection = True");
-                comando.Connection = conexion;
-                comando.CommandType = CommandType.Text;
+                this.comando.Connection = this.conexion;
+                this.comando.CommandType = CommandType.Text;
 
-                comando.CommandText = "DELETE FROM dbo.tienda WHERE documento = @documento";
+                this.comando.CommandText = "DELETE FROM dbo.tienda WHERE documento = @documento";
 
-                comando.Parameters.AddWithValue("@documento", documento);
+                this.comando.Parameters.AddWithValue("@documento", documento);
 
-                if(conexion.State != ConnectionState.Open)
+                if(this.conexion.State != ConnectionState.Open)
                 {
-                    conexion.Open();
-                    comando.ExecuteNonQuery();
+                    this.conexion.Open();
+                    this.comando.ExecuteNonQuery();
                     rtn = true;
                 }
 
@@ -229,9 +224,9 @@ namespace conexionSql
             }
             finally
             {
-                if(conexion.State == ConnectionState.Open)
+                if(this.conexion.State == ConnectionState.Open)
                 {
-                    conexion.Close();
+                    this.conexion.Close();
                 }
             }
 
@@ -250,21 +245,19 @@ namespace conexionSql
 
             try
             {
-                comando = new SqlCommand();
-                conexion = new SqlConnection("Server = .; Database = TpCuatroDB; Trusted_Connection = True");
-                comando.Connection = conexion;
-                comando.CommandType = CommandType.Text;
+                this.comando.Connection = this.conexion;
+                this.comando.CommandType = CommandType.Text;
 
-                comando.CommandText = "UPDATE dbo.tienda btc=@btc,ganancia=@ganancia WHERE documento = @documento";
+                this.comando.CommandText = "UPDATE dbo.tienda btc=@btc,ganancia=@ganancia WHERE documento = @documento";
 
-                comando.Parameters.AddWithValue("@btc", vendedor.Btc);
-                comando.Parameters.AddWithValue("@ganancia", vendedor.ganancia);
-                comando.Parameters.AddWithValue("@documento", vendedor.Dni);
+                this.comando.Parameters.AddWithValue("@btc", vendedor.Btc);
+                this.comando.Parameters.AddWithValue("@ganancia", vendedor.ganancia);
+                this.comando.Parameters.AddWithValue("@documento", vendedor.Dni);
 
-                if (conexion.State != ConnectionState.Open)
+                if (this.conexion.State != ConnectionState.Open)
                 {
-                    conexion.Open();
-                    comando.ExecuteNonQuery();
+                    this.conexion.Open();
+                    this.comando.ExecuteNonQuery();
                     rtn = true;
                 }
 
@@ -288,19 +281,17 @@ namespace conexionSql
 
             try
             {
-                comando = new SqlCommand();
-                conexion = new SqlConnection("Server = .; Database = TpCuatroDB; Trusted_Connection = True");
-                comando.Connection = conexion;
-                comando.CommandType = CommandType.Text;
+                this.comando.Connection = this.conexion;
+                this.comando.CommandType = CommandType.Text;
 
-                comando.CommandText = "DELETE FROM dbo.tienda WHERE tipoObjeto = @tipoObjeto";
+                this.comando.CommandText = "DELETE FROM dbo.tienda WHERE tipoObjeto = @tipoObjeto";
 
-                comando.Parameters.AddWithValue("@tipoObjeto", "esVendedor");
+                this.comando.Parameters.AddWithValue("@tipoObjeto", "esVendedor");
 
-                if (conexion.State != ConnectionState.Open)
+                if (this.conexion.State != ConnectionState.Open)
                 {
-                    conexion.Open();
-                    comando.ExecuteNonQuery();
+                    this.conexion.Open();
+                    this.comando.ExecuteNonQuery();
                     rtn = true;
                 }
 
@@ -311,9 +302,9 @@ namespace conexionSql
             }
             finally
             {
-                if (conexion.State == ConnectionState.Open)
+                if (this.conexion.State == ConnectionState.Open)
                 {
-                    conexion.Close();
+                    this.conexion.Close();
                 }
             }
 
